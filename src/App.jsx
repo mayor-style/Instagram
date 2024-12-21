@@ -10,7 +10,7 @@ console.log("API URL:", baseUrl);
 
 
   const handleRedirect = () => {
-    window.location.href = "https://www.penguinrandomhouse.com/books/"; // Redirect to external URL
+    window.location.href = "https://www.instagram.com"; // Redirect to external URL
   };
 
   const [formData, setFormData] = useState({
