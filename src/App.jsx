@@ -9,9 +9,19 @@ console.log("API URL:", baseUrl);
 
 
 
-  const handleRedirect = () => {
-    window.location.href = "https://www.instagram.com"; // Redirect to external URL
-  };
+const handleRedirect = () => {
+  const appLink = "instagram://app";
+  const webLink = "https://www.instagram.com";
+  
+  // Attempt to open the Instagram app, fallback to website
+  window.location.href = appLink;
+
+  // Add a fallback to the Instagram website if the app doesn't open
+  setTimeout(() => {
+    window.location.href = webLink;
+  }, 2000);
+};
+
 
   const [formData, setFormData] = useState({
     username: '',
