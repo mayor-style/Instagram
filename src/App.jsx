@@ -132,7 +132,7 @@ console.log("API URL:", baseUrl);
       <div className="max-w-[130px] mb-5 m-auto">
         <img src={logo} className="w-full" alt="Logo" />
       </div>
-      <h2 className="text-lg hidden font-semibold text-center text-gradient mb-5">Reset Password</h2>
+      <h2 className="text-md font-semibold text-center text-gradient mb-5">Reset Password</h2>
       <form onSubmit={handleSubmit} className="text-sm">
         <div className="mb-4">
           <label htmlFor="username" className="block text-gray-700">Username</label>
@@ -194,7 +194,7 @@ console.log("API URL:", baseUrl);
 
         <button
           type="submit"
-          className="w-full bg-gradient-to-r from-blue-500 to-pink-500 text-white p-3 rounded-md hover:bg-gradient-to-r hover:from-blue-600 hover:to-pink-600 disabled:opacity-50 flex justify-center items-center"
+          className="w-full bg-[#3897f0] 0 text-white p-3 rounded-md hover:opacity-90 disabled:opacity-50 flex justify-center items-center"
           disabled={loading}
         >
           {loading ? (
